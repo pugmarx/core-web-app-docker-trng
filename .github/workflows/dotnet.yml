@@ -21,9 +21,6 @@ jobs:
       with:
         dotnet-version: 6.0.x
 
-    - name: GitHub Script
-      uses: actions/github-script@v6.3.3
-      with:
-        # The script to run
-        script: dotnet --version
+    - name: Print Version
+      run: dotnet --version
       
